@@ -1,7 +1,7 @@
 {
   "name": "Maíra Andrade",
   "photo": "https://media.licdn.com/dms/image/D4D03AQEkpfOt33WMdg/profile-displayphoto-shrink_200_200/0/1677169670433?e=1715212800&v=beta&t=e7sTtZ5w8CLhcE9Zkan_5JrATIsDt9Rq1X-k4Jv2Rtw",
-  "job": "",
+  "job": "Drogaria Total",
   "location": "Guararapes -SP",
   "phone": "(18)99152-4071",
   "email": "mairahandrade@gmail.com",
@@ -48,7 +48,7 @@
   ],
   "portfolio": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "name": "Programa de Testes e Qualidade de Software",
       "url": "https://github.com/RenanJPaula/js-developer-pokedex",
       "github": true
     },
@@ -61,18 +61,18 @@
   "professionalExperience": [
     {
       "name": "Drogaria Total",
-      "period": "2017 - até o momento",
+      "period": "2015 - até o momento",
       "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
     },
     {
       "name": "Intersolid Software",
-      "period": "2010 - 2017",
-      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
+      "period": "2010 - 2015",
+      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo"
     },
     {
-      "name": "CEO / Brain Machine",
-      "period": "2016 - 2021",
-      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+      "name": "",
+      "period": "",
+      "description": "."
     }
   ]
 }
