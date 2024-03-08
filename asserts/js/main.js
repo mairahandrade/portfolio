@@ -5,17 +5,38 @@ async function updateProfileInfo(profileData) {
         return;
     }
 
-    profile.querySelector('.photo').src = profileData.photo;
-    profile.querySelector('.photo').alt = profileData.name;
-    profile.querySelector('.name').innerText = profileData.name;
-    profile.querySelector('.job').innerText = profileData.job;
-    profile.querySelector('.location').innerText = profileData.location;
+    const photo = profile.querySelector('.photo');
+    if (photo) {
+        photo.src = profileData.photo;
+        photo.alt = profileData.name;
+    }
+
+    const name = profile.querySelector('.name');
+    if (name) {
+        name.innerText = profileData.name;
+    }
+
+    const job = profile.querySelector('.job');
+    if (job) {
+        job.innerText = profileData.job;
+    }
+
+    const location = profile.querySelector('.location');
+    if (location) {
+        location.innerText = profileData.location;
+    }
+
     const phone = profile.querySelector('.phone');
-    phone.innerText = profileData.phone;
-    phone.href = `tel:${profileData.phone}`;
+    if (phone) {
+        phone.innerText = profileData.phone;
+        phone.href = `tel:${profileData.phone}`;
+    }
+
     const email = profile.querySelector('.email');
-    email.innerText = profileData.email;
-    email.href = `mailto:${profileData.email}`;
+    if (email) {
+        email.innerText = profileData.email;
+        email.href = `mailto:${profileData.email}`;
+    }
 }
 
 
