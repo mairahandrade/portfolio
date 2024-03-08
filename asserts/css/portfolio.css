@@ -31,7 +31,7 @@ margin-button: 0.5rem;
     height: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/asserts/img/icons/github.svg');
+    background-image: url('../img/icons/github.svg');
     margin-rigth:0.5rem;
     }
 

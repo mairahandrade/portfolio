@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('/asserts/fonts/neuemachina-ultrabold.otf');
+    src: url('../fonts/neuemachina-ultrabold.otf');
 }
 
 body {
@@ -34,7 +34,7 @@ text-decoration:underline;
 .main::before,
 .main::after {
     content: '';
-    background-image: url('/asserts/img/cor.svg');
+    background-image: url('../img/cor.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;

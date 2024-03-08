@@ -17,7 +17,7 @@
   height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url('/asserts/img/icons/ponto.svg');
+  background-image: url('../img/icons/ponto.svg');
 }
 
 /* Foto do perfil */
@@ -64,22 +64,22 @@
 
 /* Ícone para o tipo de trabalho */
 .information .job::before {
-  background-image: url('/asserts/img/icons/job.svg');
+  background-image: url('../img/icons/job.svg');
 }
 
 /* Ícone para a localização */
 .information .location::before {
-  background-image: url('/asserts/img/icons/location.svg');
+  background-image: url('../img/icons/location.svg');
 }
 
 /* Ícone para o e-mail */
 .information .email::before {
-  background-image: url('/asserts/img/icons/email.svg');
+  background-image: url('../img/icons/email.svg');
 }
 
 /* Ícone para o telefone */
 .information .phone::before {
-  background-image: url('/asserts/img/icons/phone.svg');
+  background-image: url('../img/icons/phone.svg');
 }
 
 /* Layout em grade para dispositivos de tela grande */
