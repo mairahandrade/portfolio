@@ -7,9 +7,9 @@ async function updateProfileInfo(profileData) {
 
     profile.querySelector('.photo').src = profileData.photo;
     profile.querySelector('.photo').alt = profileData.name;
-    profile.querySelector('#profile.name').innerText = profileData.name;
-    profile.querySelector('#profile.job').innerText = profileData.job;
-    profile.querySelector('#profile.location').innerText = profileData.location;
+    profile.querySelector('.name').innerText = profileData.name;
+    profile.querySelector('.job').innerText = profileData.job;
+    profile.querySelector('.location').innerText = profileData.location;
     const phone = profile.querySelector('.phone');
     phone.innerText = profileData.phone;
     phone.href = `tel:${profileData.phone}`;
