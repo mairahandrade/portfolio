@@ -1,18 +1,22 @@
-
-function updateProfileInfo(profileData) {
-       const profile = document.getElementById('profile');
-        profile.querySelector('.photo').src = profileData.photo;
-        profile.querySelector('.photo').alt = profileData.name;
-        profile.querySelector('.name').innerText = profileData.name;
-        profile.querySelector('.job').innerText = profileData.job;
-        profile.querySelector('.location').innerText = profileData.location;
-        const phone = profile.querySelector('.phone');
-        phone.innerText = profileData.phone;
-        phone.href = `tel:${profileData.phone}`;
-        const email = profile.querySelector('.email');
-        email.innerText = profileData.email;
-        email.href = `mailto:${profileData.email}`;
+async function updateProfileInfo(profileData) {
+    const profile = document.getElementById('profile');
+    if (!profile) {
+        console.error('Elemento de perfil não encontrado!');
+        return;
     }
+
+    profile.querySelector('.photo').src = profileData.photo;
+    profile.querySelector('.photo').alt = profileData.name;
+    profile.querySelector('#profile.name').innerText = profileData.name;
+    profile.querySelector('#profile.job').innerText = profileData.job;
+    profile.querySelector('#profile.location').innerText = profileData.location;
+    const phone = profile.querySelector('.phone');
+    phone.innerText = profileData.phone;
+    phone.href = `tel:${profileData.phone}`;
+    const email = profile.querySelector('.email');
+    email.innerText = profileData.email;
+    email.href = `mailto:${profileData.email}`;
+}
 
 
 function updateSoftSkills(profileData) {
@@ -57,6 +61,7 @@ function updateProfessionalExperience(profileData) {
 
 
 (async () => {
+ try {
     const profileData = await fetchProfileData()
     console.log(profileData)
 
@@ -66,5 +71,7 @@ function updateProfessionalExperience(profileData) {
     updateLanguages(profileData)
     updatePortfolio(profileData)
     updateProfessionalExperience(profileData)
-
+ } catch (error) {
+        console.error('Erro ao carregar dados do perfil:', error);
+    }
 })()
