@@ -1,21 +1,21 @@
 .languages {
-display: flex;
-flex-direction: row;
-justify-content:flex-start;
-flex-wrap: wrap;
-padding: 0;
-list-style:none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
 
 .languages li {
 display: flex;
 flex-direction: row;
 align-items:center;
-padding-right: 1.25rem;
+padding-right: 1rem;
 font-weight: 700;
-font-size: 1.5rem;
-margin-botton: 0.5rem;
-
 
 }
 

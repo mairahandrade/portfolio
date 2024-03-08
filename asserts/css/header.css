@@ -1,0 +1,108 @@
+/* Flexbox para layout responsivo em dispositivos pequenos */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Ícone no canto superior direito */
+.header::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('/asserts/img/icons/ponto.svg');
+}
+
+/* Foto do perfil */
+.header .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Título */
+.header .title {
+  font-family: 'Neue -Machine';
+  text-align: center;
+}
+
+/* Informações */
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Estilização para cada informação */
+.information p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 1.125rem;
+}
+
+/* Ícones para cada tipo de informação */
+.information p::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+
+/* Ícone para o tipo de trabalho */
+.information .job::before {
+  background-image: url('/asserts/img/icons/job.svg');
+}
+
+/* Ícone para a localização */
+.information .location::before {
+  background-image: url('/asserts/img/icons/location.svg');
+}
+
+/* Ícone para o e-mail */
+.information .email::before {
+  background-image: url('/asserts/img/icons/email.svg');
+}
+
+/* Ícone para o telefone */
+.information .phone::before {
+  background-image: url('/asserts/img/icons/phone.svg');
+}
+
+/* Layout em grade para dispositivos de tela grande */
+@media only screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+  }
+
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 210px;
+  }
+
+  .header .information {
+    grid-area: information;
+  }
+}
