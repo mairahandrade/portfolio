@@ -17,7 +17,7 @@
       },
       {
         "name": "JavaScript",
-        "logo": "https://github.com/mairahandrade/js-developer-portfolio/blob/main/assets/img/icons/tools/js.svg"
+        "logo": "https://github.com/mairahandrade/portfolio/blob/main/assets/img/icons/tools/javascript.svg"
       },
       {
         "name": "Html",
@@ -53,8 +53,8 @@
       "github": true
     },
     {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "name": "",
+      "url": "",
       "github": true
     }
   ],
